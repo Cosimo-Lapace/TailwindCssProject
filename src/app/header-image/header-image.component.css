@@ -1,0 +1,16 @@
+
+.bg-image-header{
+  background-image: url('../../assets/images/hero.jpg');
+}
+.animation-delay200{
+  animation-delay: 200ms;
+}
+.animation-delay150{
+  animation-delay: 150ms;
+}
+.animation-delay300{
+  animation-delay: 300ms;
+}
+.animation-delay75{
+  animation-delay: 75ms;
+}

@@ -1,0 +1,22 @@
+
+<div class="md:menu-item-desktop max-md:menu-mobile-item">
+  <div>Home</div>
+ </div>
+ <div class="md:menu-item-desktop max-md:menu-mobile-item">
+   <div>Lineup</div>
+  </div>
+  <div class="md:menu-item-desktop group max-md:menu-mobile-Tickets" (click)="MobileMenuDropdown()">
+   <div class="max-md:Tickets">Tickets</div>
+   <div class="md:dropdown-desktop" *ngIf="MobileMenuDropdownChecked">
+     <div class="md:dropdown-desktop-item max-md:dropdown-mobile-item">
+       <span>Single day ticket</span>
+     </div>
+     <div class="md:dropdown-desktop-item max-md:dropdown-mobile-item">
+       <span>7 day ticket</span>
+     </div>
+   </div>
+  </div>
+  <div class="md:menu-item-desktop max-md:menu-mobile-item">
+   <div>Support</div>
+  </div>
+

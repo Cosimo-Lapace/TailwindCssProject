@@ -17,37 +17,18 @@
         <div id="mobile-menu-button" (click)="mobilebutton()" class="peer">
         <div #rotate45right class="bg-zinc-200 rounded-full w-8 h-1 transition-all top-0"></div>
         <div #opacity class="bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all"></div>
-        <div #rotate45left class="bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all top-0"></div>
+        <div #rotate45left class="bg-zinc-200 rounded-full w-8 h-1 mt-1 transition-all -top-2"></div>
       </div>
       <!-- MOBILE DROPDOWN -->
-      <div *ngIf="isMobileMenuOpen" class="absolute bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0 top-[62px]">
-          adsad
+      <div *ngIf="isMobileMenuOpen" class="absolute block bg-gradient-to-r from-rose-500 to-pink-500 w-full left-0 top-[62px]">
+        <app-navbarcontent></app-navbarcontent>
       </div>
       <!-- MOBILE DROPDOWN -->
       </div>
       <!-- END MOBILE ICON -->
-      <div class="hidden flex-1 md:flex items-center justify-end">
-        <div class="menu-item">
-         <span>Home</span>
-        </div>
-        <div class="menu-item">
-          <span>Lineup</span>
-         </div>
-         <div class="menu-item group">
-          <span>Tickets</span>
-          <div class="group-hover:block hidden bg-pink-500 absolute top-full right-0 whitespace-nowrap rounded-b-md text-right">
-            <div class=" p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200">
-              <span>Single day ticket</span>
-            </div>
-            <div class=" p-4 font-bold hover:bg-white/5 hover:text-zinc-200 transition-colors ease-in-out cursor-pointer text-pink-200">
-              <span>7 day ticket</span>
-            </div>
-          </div>
-         </div>
-         <div class="menu-item">
-          <span>Support</span>
-         </div>
-      </div>
+          <app-navbarcontent class="hidden flex-1 md:flex items-center justify-end"></app-navbarcontent>
     </nav>
+    <app-header-image></app-header-image>
   </header>
+  <app-headliners></app-headliners>
 </main>
