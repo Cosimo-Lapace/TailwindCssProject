@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { SingersService } from '../shared/singers.service';
 
 @Component({
   selector: 'app-headliners',
@@ -10,7 +11,8 @@ export class HeadlinersComponent {
 
   @ViewChild('carousel', { static: true }) carousel?: ElementRef<HTMLDivElement>;
 
-
+constructor(private singersService : SingersService){}
+singers = this.singersService.singers;
   nextCarousel(){
     const carouselElement = this.carousel?.nativeElement;
     if (carouselElement) {
